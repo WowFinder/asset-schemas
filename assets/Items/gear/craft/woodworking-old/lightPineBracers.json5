@@ -1,0 +1,11 @@
+{
+    $type: 'Armor',
+    rarity: 'common',
+    label: 'craft.woodworking-old.lightPineBracers',
+    shape: ['wrists'],
+    weight: 3,
+    bonuses: {
+        armorClass: +1,
+    },
+    type: 'misc',
+}

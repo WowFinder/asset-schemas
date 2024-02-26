@@ -1,0 +1,10 @@
+{
+    "extends": "./tsconfig.json",
+    "files": ["jest.setup.ts"],
+    "include": ["jest.setup.ts", "**/*.test.ts*"],
+    "exclude": [],
+    "compilerOptions": {
+        "types": ["jest"],
+        "noEmit": true
+    }
+}

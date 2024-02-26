@@ -1,0 +1,15 @@
+{
+    $type: 'Armor',
+    rarity: 'common',
+    label: 'craft.tailoring.reinforcedBlueLinenPants',
+    shape: ['legs'],
+    weight: 3,
+    bonuses: {
+        armorClass: +3,
+        stats: {
+            INT: +2,
+        },
+    },
+    type: 'misc',
+    maxDex: 3,
+}

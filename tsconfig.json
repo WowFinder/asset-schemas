@@ -1,0 +1,20 @@
+{
+    "extends": "@tsconfig/node20/tsconfig.json",
+    "compilerOptions": {
+        "target": "ES2022",
+        "allowJs": true,
+        "declaration": true,
+        "module": "commonjs",
+        "lib": ["es2022"],
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "baseUrl": "./assets",
+        "outDir": "dist",
+        "strict": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true
+    },
+    "include": ["assets/**/*"],
+    "exclude": []
+}

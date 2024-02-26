@@ -1,0 +1,14 @@
+{
+    $type: 'Armor',
+    rarity: 'uncommon',
+    label: 'craft.blacksmithing-old.gemmedCopperGauntlets',
+    shape: ['hands'],
+    weight: 8,
+    bonuses: {
+        armorClass: +1,
+        stats: {
+            STR: +2,
+        }
+    },
+    type: 'misc',
+}
