@@ -1,4 +1,4 @@
-import { testAssetsDir } from './base';
+import { slurpAssetsDir } from './base';
 import {
     assertDateString,
     assertObject,
@@ -8,21 +8,18 @@ import {
 
 const DirName = 'Adventures';
 
-function testAdventure(raw: unknown, fileref?: string): asserts raw is any {
-    const filesuffix = fileref ? ` (${fileref})` : '';
-    test(`Adventure ${filesuffix}`, () => {
-        assertProperty(raw, 'key', 'Invalid adventure key', assertString);
-        assertProperty(raw, 'title', 'Invalid adventure title', assertString);
-        assertProperty(raw, 'date', 'Invalid adventure date', assertDateString);
-        assertProperty(
-            raw,
-            'rewards',
-            'Invalid adventure rewards',
-            assertObject,
-        );
-    });
+function testAdventure(raw: unknown): asserts raw is any {
+    assertProperty(raw, 'key', 'Invalid adventure key', assertString);
+    assertProperty(raw, 'title', 'Invalid adventure title', assertString);
+    assertProperty(raw, 'date', 'Invalid adventure date', assertDateString);
+    assertProperty(raw, 'rewards', 'Invalid adventure rewards', assertObject);
+    // TODO: Validate format of `rewards` entries
 }
 
 describe('Adventures', () => {
-    testAssetsDir(DirName, testAdventure);
+    for (const entry of slurpAssetsDir(DirName)) {
+        test(`Adventure ${entry.fileBaseName}`, () => {
+            testAdventure(entry.payload);
+        });
+    }
 });

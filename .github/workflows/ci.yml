@@ -25,7 +25,7 @@ jobs:
             - name: Lint validation
               run: yarn lint
             - name: Test
-              run: yarn jest --passWithNoTests
+              run: yarn jest
             - name: SonarCloud Scan
               uses: SonarSource/sonarcloud-github-action@master
               env:

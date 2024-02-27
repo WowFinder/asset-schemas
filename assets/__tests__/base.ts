@@ -2,22 +2,17 @@ import { readFileSync, readdirSync } from 'fs';
 import JSON5 from 'json5';
 import path from 'path';
 
-type ObjectTester<T = unknown> = (
-    obj: any,
-    fileref?: string,
-) => asserts obj is T;
+type FileEntry<T> = {
+    fileBaseName: string;
+    payload: T;
+};
 
-function testFile<T>(fpath: string, test: ObjectTester<T>): void {
-    const content = readFileSync(fpath, 'utf8');
-    const obj = JSON5.parse(content);
-    test(obj, path.basename(fpath, '.json5'));
-}
-
-function testDir<T>(dir: string, test: ObjectTester<T>): void {
+function* slurpDir(dir: string): Generator<FileEntry<object>> {
     const files = readdirSync(dir).filter(f => f.endsWith('.json5'));
     for (const file of files) {
-        const filePath = `${dir}/${file}`;
-        testFile(filePath, test);
+        const content = readFileSync(`${dir}/${file}`, 'utf8');
+        const obj = JSON5.parse(content);
+        yield { fileBaseName: path.basename(file, '.json5'), payload: obj };
     }
 }
 
@@ -25,9 +20,10 @@ function getAssetsPath(subpath?: string): string {
     return path.join(path.resolve(__dirname, '..'), subpath ?? '');
 }
 
-function testAssetsDir(subpath: string, test: ObjectTester): void {
-    testDir(getAssetsPath(subpath), test);
+function* slurpAssetsDir(subpath: string): Generator<FileEntry<object>> {
+    const dir = getAssetsPath(subpath);
+    yield* slurpDir(dir);
 }
 
-export { testDir, getAssetsPath, testAssetsDir };
-export type { ObjectTester };
+export { slurpAssetsDir };
+export type { FileEntry };
