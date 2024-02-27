@@ -11,8 +11,8 @@
         "lint": "eslint . --ext js,ts",
         "lint:fix": "eslint . --ext js,ts --fix",
         "prettier": "prettier --write \"src/**/*.{js,ts,json,json5}",
-        "test": "jest --passWithNoTests",
-        "test:coverage": "jest --passWithNoTests --coverage",
+        "test": "jest --verbose --passWithNoTests",
+        "test:coverage": "jest --verbose --passWithNoTests --coverage",
         "checks:quick": "npm-run-all --sequential lint ",
         "checks:standard": "npm-run-all --sequential lint test",
         "checks:pedantic": "npm-run-all --sequential lint:fix prettier test:coverage"
