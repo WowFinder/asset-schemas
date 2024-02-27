@@ -1,0 +1,10 @@
+{
+    key: 'example',
+    title: 'Example',
+    date: '1899-12-30',
+    rewards: {
+        mrSample: {
+            XP: 1,
+        },
+    },
+}

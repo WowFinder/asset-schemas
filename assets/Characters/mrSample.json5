@@ -1,0 +1,8 @@
+{
+    key: 'mrSample',
+    personal: {
+        fullName: 'Mister Example',
+    },
+    race: 'human.con',
+    active: false,
+}
