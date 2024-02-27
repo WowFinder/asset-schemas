@@ -13,15 +13,6 @@ function testFile<T>(fpath: string, test: ObjectTester<T>): void {
     test(obj, path.basename(fpath, '.json5'));
 }
 
-function checkFile<T>(path: string, test: ObjectTester<T>): Error | null {
-    try {
-        testFile(path, test);
-        return null;
-    } catch (e) {
-        return e as Error;
-    }
-}
-
 function testDir<T>(dir: string, test: ObjectTester<T>): void {
     const files = readdirSync(dir).filter(f => f.endsWith('.json5'));
     for (const file of files) {
