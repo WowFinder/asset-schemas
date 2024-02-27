@@ -18,7 +18,7 @@ function testAdventure(raw: unknown): asserts raw is any {
 
 describe('Adventures', () => {
     for (const entry of slurpAssetsDir(DirName)) {
-        test(`Adventure ${entry.fileBaseName}`, () => {
+        it(`Adventure ${entry.fileBaseName}`, () => {
             testAdventure(entry.payload);
         });
     }
