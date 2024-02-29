@@ -53,14 +53,14 @@ function validateDirectory(schemaKey: AssetType, dirPath: string): void {
     files.forEach(file => validateFile(schemaKey, path.resolve(dirPath, file)));
 }
 
-function validateKnowDirectories(basePath: string = '.'): void {
+function validateKnowDirectories(): void {
     console.log(
-        `Validating known directories. Base path: ${basePath}; Working directory: ${process.cwd()}; Current path: ${__dirname}`,
+        `Validating known directories. Working directory: ${process.cwd()}; Current path: ${__dirname}`,
     );
     Object.keys(assetTypes).forEach(k =>
         validateDirectory(
             k as AssetType,
-            path.resolve(basePath, 'assets', assetTypes[k as AssetType]),
+            path.resolve('assets', assetTypes[k as AssetType]),
         ),
     );
 }
