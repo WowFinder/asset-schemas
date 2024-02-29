@@ -6,6 +6,7 @@ import path from 'path';
 const assetTypes = {
     Adventure: 'Adventures',
     Character: 'Characters',
+    Class: 'Classes',
 } as const;
 type AssetType = keyof typeof assetTypes;
 

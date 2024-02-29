@@ -8,7 +8,7 @@
     refl: true,
     will: true,
     esp: 0.67,
-    list: 'bard',
+    list: 'arts',
     wealth: 10500,
     skills: [
         'acrobatics',

@@ -2,7 +2,7 @@
 TARGETDIR=dist/schemas
 BASECOMMAND="yarn typescript-json-schema --noExtraProps --required --strictNullChecks tsconfig.json"
 
-types=(Adventure Character)
+types=(Adventure Character Class)
 
 mkdir -p ${TARGETDIR}
 for t in ${types[@]}; do
