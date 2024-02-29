@@ -24,6 +24,8 @@ jobs:
               run: yarn
             - name: Lint validation
               run: yarn lint
+            - name: Build
+              run: yarn build
             - name: Test
               run: yarn jest --verbose --coverage
             - name: SonarCloud Scan

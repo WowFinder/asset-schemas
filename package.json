@@ -10,19 +10,28 @@
     "scripts": {
         "lint": "eslint . --ext js,ts",
         "lint:fix": "eslint . --ext js,ts --fix",
-        "prettier": "prettier --write \"src/**/*.{js,ts,json,json5}",
+        "prettier": "prettier --write \"{assets,schema}/**/*.{js,ts,json,json5}\"",
         "test": "jest --verbose --passWithNoTests",
         "test:coverage": "jest --verbose --passWithNoTests --coverage",
+        "build:pre": "rimraf dist",
+        "build:ts": "tsc",
+        "build:schema": "bash build-schemas.sh",
+        "build": "npm-run-all --sequential build:pre build:ts build:schema",
         "checks:quick": "npm-run-all --sequential lint ",
-        "checks:standard": "npm-run-all --sequential lint test",
-        "checks:pedantic": "npm-run-all --sequential lint:fix prettier test:coverage"
+        "checks:standard": "npm-run-all --sequential lint test build",
+        "checks:pedantic": "npm-run-all --sequential lint:fix prettier test:coverage build"
+    },
+    "dependencies": {
+        "ajv": "^8.12.0"
     },
     "devDependencies": {
         "@tsconfig/node20": "^20.1.2",
+        "@tsd/typescript": "^5.3.3",
+        "@types/ajv": "^1.0.0",
         "@types/jest": "^29.5.12",
-        "@types/node": "^20.11.20",
-        "@typescript-eslint/eslint-plugin": "^7.0.2",
-        "@typescript-eslint/parser": "^7.0.2",
+        "@types/node": "^20.11.22",
+        "@typescript-eslint/eslint-plugin": "^7.1.0",
+        "@typescript-eslint/parser": "^7.1.0",
         "eslint": "^8.57.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-config-standard": "^17.1.0",
@@ -33,13 +42,15 @@
         "eslint-plugin-prettier": "^5.1.3",
         "eslint-plugin-promise": "^6.1.1",
         "jest": "^29.7.0",
+        "jest-tsd": "^0.2.2",
         "json5": "^2.2.3",
         "npm-run-all": "^4.1.5",
         "prettier": "^3.2.5",
         "rimraf": "^5.0.5",
         "ts-jest": "^29.1.2",
         "tsd": "^0.30.7",
-        "typescript": "^5.3.3"
+        "typescript": "^5.3.3",
+        "typescript-json-schema": "^0.63.0"
     },
     "packageManager": "yarn@4.1.0"
 }
