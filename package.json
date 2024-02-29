@@ -16,9 +16,7 @@
         "build:pre": "rimraf dist",
         "build:ts": "tsc",
         "build:schema": "sh build-schemas.sh",
-        "build:post": "node dist/validator.js",
-        "build:parallel": "npm-run-all --parallel build:ts build:schema",
-        "build": "npm-run-all --sequential build:pre build:parallel build:post",
+        "build": "npm-run-all --sequential build:pre build:ts build:schema",
         "checks:quick": "npm-run-all --sequential lint ",
         "checks:standard": "npm-run-all --sequential lint test build",
         "checks:pedantic": "npm-run-all --sequential lint:fix prettier test:coverage build"
