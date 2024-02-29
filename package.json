@@ -15,7 +15,7 @@
         "test:coverage": "jest --verbose --passWithNoTests --coverage",
         "build:pre": "rimraf dist",
         "build:ts": "tsc",
-        "build:schema": "sh build-schemas.sh",
+        "build:schema": "bash build-schemas.sh",
         "build": "npm-run-all --sequential build:pre build:ts build:schema",
         "checks:quick": "npm-run-all --sequential lint ",
         "checks:standard": "npm-run-all --sequential lint test build",
