@@ -8,7 +8,7 @@
     fort: true,
     will: true,
     div: 1,
-    list: 'cleric',
+    list: 'divine',
     wealth: 14000,
     skills: [
         'appraise',

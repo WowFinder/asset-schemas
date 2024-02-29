@@ -7,7 +7,7 @@
     skl: 4,
     will: true,
     esp: 1,
-    list: 'cleric',
+    list: 'divine',
     wealth: 10500,
     skills: [
         'acrobatics',
