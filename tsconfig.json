@@ -9,12 +9,12 @@
         "esModuleInterop": true,
         "noImplicitAny": true,
         "sourceMap": true,
-        "baseUrl": "./assets",
+        "baseUrl": "./schema",
         "outDir": "dist",
         "strict": true,
         "moduleResolution": "node",
         "resolveJsonModule": true
     },
-    "include": ["assets/**/*"],
-    "exclude": []
+    "include": ["schema/**/*"],
+    "exclude": ["**/*.test-d.ts"]
 }
