@@ -51,7 +51,7 @@
             { spell: 'cureWoundsMass', rank: 1 },
             { spell: 'inflictWoundsMass', rank: 1 },
             { spell: 'summonMonster', rank: 5 },
-            { spell: 'resistEnergy', rank: 2 }
+            { spell: 'resistEnergy', rank: 2 },
         ],
         '6': [
             { spell: 'cureWoundsMass', rank: 2 },

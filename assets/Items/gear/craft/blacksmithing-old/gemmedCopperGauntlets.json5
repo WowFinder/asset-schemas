@@ -8,7 +8,7 @@
         armorClass: +1,
         stats: {
             STR: +2,
-        }
+        },
     },
     type: 'misc',
 }

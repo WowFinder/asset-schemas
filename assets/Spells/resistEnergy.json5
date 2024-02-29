@@ -15,5 +15,5 @@
     components: ['V', 'S'],
     range: 'touch',
     save: 'will',
-    flags: ['spellResistance'],   
+    flags: ['spellResistance'],
 }

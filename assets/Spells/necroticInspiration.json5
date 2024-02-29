@@ -1,7 +1,7 @@
 {
     key: 'necroticInspiration',
     ranks: [
-        { 
+        {
             rank: 1,
             range: 'touch',
             castingTime: '1 h',
