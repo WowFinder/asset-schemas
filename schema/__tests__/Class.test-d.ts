@@ -20,8 +20,8 @@ const fullClass = {
     bab: 1,
     skl: 12,
     wealth: 999999,
-    // skills: ['sampleSkill1', 'sampleSkill2', 'sampleSkill3'],
-    /*features: [
+    skills: ['sampleSkill1', 'sampleSkill2', 'sampleSkill3'],
+    features: [
         {
             level: 1,
             feature: 'sampleFeature1',
@@ -42,9 +42,7 @@ const fullClass = {
             level: 10,
             aura: 'sampleAura1',
         },
-    ],*/
-    skills: [],
-    features: [],
+    ],
 };
 
 describe('RawClassAsset', () => {
