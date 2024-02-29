@@ -7,7 +7,7 @@
             range: 'touch',
         },
         {
-            rank: 2,    
+            rank: 2,
             range: 'close',
         },
         {

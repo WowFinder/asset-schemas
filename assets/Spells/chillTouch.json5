@@ -13,6 +13,6 @@
     components: ['V', 'S'],
     range: 'touch',
     duration: 'instantaneous',
-    save:'will',
+    save: 'will',
     flags: ['spellResistance'],
 }

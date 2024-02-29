@@ -8,7 +8,7 @@
     ],
     sch: 'nec',
     castingTime: 'standard',
-    components: ['V','S'],
+    components: ['V', 'S'],
     duration: 'instantaneous',
     save: 'will',
     flags: ['spellResistance'],

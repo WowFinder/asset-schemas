@@ -27,7 +27,7 @@
             duration: '1 h/level',
         },
     ],
-    sch:'abj',
+    sch: 'abj',
     castingTime: 'standard',
     components: ['V', 'S'],
     save: 'will',
