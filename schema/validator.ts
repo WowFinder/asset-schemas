@@ -7,6 +7,8 @@ const assetTypes = {
     Adventure: 'Adventures',
     Character: 'Characters',
     Class: 'Classes',
+    Faction: 'Factions',
+    Race: 'Races',
 } as const;
 type AssetType = keyof typeof assetTypes;
 

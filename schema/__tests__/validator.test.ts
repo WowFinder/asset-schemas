@@ -1,3 +1,3 @@
-it('Should validate the sample assets', () => {
+it('Should validate the assets', () => {
     expect(() => require('../validator')).not.toThrow();
 });
