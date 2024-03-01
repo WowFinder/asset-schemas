@@ -1,8 +1,8 @@
 #!/bin/bash
 TARGETDIR=dist/schemas
-BASECOMMAND="yarn typescript-json-schema --noExtraProps --required --strictNullChecks tsconfig.json"
+BASECOMMAND="yarn typescript-json-schema --noExtraProps --required --strictNullChecks --aliasRefs tsconfig.json"
 
-types=(Adventure Character Class Faction Race)
+types=(Adventure Character Class Faction Race SpellList)
 
 mkdir -p ${TARGETDIR}
 for t in ${types[@]}; do

@@ -1,3 +1,9 @@
 export type * from './Adventures';
 export type * from './Characters';
+export type * from './Classes';
+export type * from './Factions';
+export type * from './Races';
+export type * from './Saves';
+export type * from './Speeds';
+export type * from './SpellLists';
 export type * from './Stats';
