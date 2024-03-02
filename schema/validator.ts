@@ -9,6 +9,7 @@ const assetTypes = {
     Class: 'Classes',
     Faction: 'Factions',
     Race: 'Races',
+    Spell: 'Spells',
     SpellList: 'SpellLists',
 } as const;
 type AssetType = keyof typeof assetTypes;

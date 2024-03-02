@@ -90,5 +90,6 @@
     sch: 'celestial',
     castingTime: 'standard',
     range: 'medium',
+    components: ['S'],
     descriptors: ['solar'],
 }

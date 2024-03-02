@@ -92,6 +92,7 @@
             effect: 'half',
         },
     ],
+    components: ['S'],
     descriptors: ['lunar'],
     flags: ['concentration', 'spellResistance'],
 }
