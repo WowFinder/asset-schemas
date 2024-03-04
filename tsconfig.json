@@ -16,5 +16,5 @@
         "resolveJsonModule": true
     },
     "include": ["schema/**/*"],
-    "exclude": ["**/*.test-d.ts"]
+    "exclude": ["**/__tests__"]
 }
