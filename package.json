@@ -1,26 +1,25 @@
 {
-    "name": "public-assets",
+    "name": "assets",
     "version": "0.0.1",
-    "description": "Public data and media assets for the WowFinder applications",
+    "description": "Data and media assets for the WowFinder campaign and applications",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "repository": "https://github.com/WowFinder/public-assets.git",
+    "repository": "https://github.com/WowFinder/assets.git",
     "author": "Edurne Pascual <herenvardo@gmail.com>",
-    "license": "TBD",
-    "private": true,
+    "license": "Multiple (mainly GPL3)",
     "scripts": {
         "lint": "eslint . --ext js,ts",
         "lint:fix": "eslint . --ext js,ts --fix",
-        "prettier": "prettier --write \"{assets,schema}/**/*.{js,ts,json,json5}\"",
+        "format": "prettier --write \"{assets,schema}/**/*.{js,ts,json,json5}\"",
         "test": "jest --verbose --passWithNoTests",
         "test:coverage": "jest --verbose --passWithNoTests --coverage",
         "build:pre": "rimraf dist",
         "build:ts": "tsc",
         "build:schema": "bash build-schemas.sh",
-        "build": "npm-run-all --sequential build:pre build:ts build:schema",
-        "checks:quick": "npm-run-all --sequential lint ",
-        "checks:standard": "npm-run-all --sequential lint test build",
-        "checks:pedantic": "npm-run-all --sequential lint:fix prettier build test:coverage"
+        "build": "npm-run-all -s build:pre build:ts build:schema",
+        "checks:quick": "lint ",
+        "checks:standard": "npm-run-all -sc lint test build",
+        "checks:pedantic": "npm-run-all -sc lint:fix format build test:coverage"
     },
     "dependencies": {
         "ajv": "^8.12.0"
