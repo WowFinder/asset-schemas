@@ -1,5 +1,5 @@
 {
-    "name": "assets",
+    "name": "@wowfinder/assets",
     "version": "0.0.1",
     "description": "Data and media assets for the WowFinder campaign and applications",
     "main": "dist/index.js",
@@ -19,7 +19,8 @@
         "build": "npm-run-all -s build:pre build:ts build:schema",
         "checks:quick": "lint ",
         "checks:standard": "npm-run-all -sc lint test build",
-        "checks:pedantic": "npm-run-all -sc lint:fix format build test:coverage"
+        "checks:pedantic": "npm-run-all -sc lint:fix format build test:coverage",
+        "prepublishOnly": "yarn checks:pedantic && yarn version apply && yarn build"
     },
     "dependencies": {
         "ajv": "^8.12.0"
