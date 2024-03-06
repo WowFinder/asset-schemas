@@ -1,12 +1,15 @@
 {
     "name": "@wowfinder/assets",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "description": "Data and media assets for the WowFinder campaign and applications",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": "https://github.com/WowFinder/assets.git",
     "author": "Edurne Pascual <herenvardo@gmail.com>",
     "license": "Multiple (mainly GPL3)",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "lint": "eslint . --ext js,ts",
         "lint:fix": "eslint . --ext js,ts --fix",
@@ -54,5 +57,5 @@
         "typescript": "^5.3.3",
         "typescript-json-schema": "^0.63.0"
     },
-    "packageManager": "yarn@4.1.0"
+    "packageManager": "yarn@4.1.1"
 }
