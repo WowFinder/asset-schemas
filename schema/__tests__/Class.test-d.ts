@@ -1,26 +1,27 @@
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
 import { RawClassAsset } from '../Classes';
+import { ClassTier, Skill } from '@wowfinder/ts-enums';
 
 const minimalClass = {
     key: 'sampleClass',
-    tier: 'base',
+    tier: ClassTier.base,
     maxLevel: 1,
     hd: 6,
     bab: 0.5,
-    skl: 0,
-    wealth: 0,
+    skillRanks: 0,
+    startingWealth: 0,
     skills: [],
     features: [],
 };
 const fullClass = {
     key: 'sampleClass',
-    tier: 'prestige',
+    tier: ClassTier.prestige,
     maxLevel: 20,
     hd: 12,
     bab: 1,
-    skl: 12,
-    wealth: 999999,
-    skills: ['sampleSkill1', 'sampleSkill2', 'sampleSkill3'],
+    skillRanks: 12,
+    startingWealth: 999999,
+    skills: [Skill.acrobatics, Skill.alchemy, Skill.perception],
     features: [
         {
             level: 1,
@@ -76,10 +77,10 @@ describe('RawClassAsset', () => {
             bab: undefined,
         });
     });
-    it('should not accept a class with missing skl', () => {
+    it('should not accept a class with missing skillRanks', () => {
         expectNotAssignable<RawClassAsset>({
             ...minimalClass,
-            skl: undefined,
+            skillRanks: undefined,
         });
     });
     it('should not accept a class with unknown properties', () => {

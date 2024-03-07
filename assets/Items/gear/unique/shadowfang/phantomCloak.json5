@@ -8,7 +8,7 @@
     bonuses: {
         armorClass: +4,
         stats: {
-            STR: +4,
+            strength: +4,
         },
     },
     type: 'heavy',

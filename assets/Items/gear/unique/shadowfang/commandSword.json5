@@ -18,7 +18,7 @@
                 sides: 8,
                 fixedMod: 2,
             },
-            modStat: 'STR',
+            modStat: 'strength',
         },
         {
             types: ['holy'],

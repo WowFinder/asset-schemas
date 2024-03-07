@@ -2,17 +2,17 @@
     key: 'draenei',
     size: 0,
     statMods: {
-        STR: 2,
-        DEX: -2,
-        CON: 0,
-        INT: 0,
-        WIS: 4,
-        CHA: 0,
+        strength: 2,
+        dexterity: -2,
+        constitution: 0,
+        intelligence: 0,
+        wisdom: 4,
+        charisma: 0,
     },
     skillMods: {
         perception: 2,
     },
-    initialLangs: ['common', 'draenic'],
+    initialLangs: ['common', 'draenei'],
     additionalLangs: [
         'orcish',
         'darnassian',
@@ -21,7 +21,7 @@
         'arakkoa',
         'ursine',
     ],
-    commonAligns: ['LG'],
+    commonAlignments: ['lawfulGood'],
     speeds: {
         base: 30,
     },

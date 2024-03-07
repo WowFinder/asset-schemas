@@ -8,6 +8,6 @@ Uses the [standard elf profile from Pathfinder](http://legacy.aonprd.com/coreRul
 
 **Arcane affinity**: High Elves have a +2 racial bonus to the Knowledge (Arcane) skill.
 
-**Languages**: High Elves speak Thalassian and Common. High Elves with high Intelligence scores can choose their additional languages from among these: Dwarvish (Ironforge), Gnomish, Naaru (Celestial), Draenic, Darnassian, Ursine (Furbolg), Sylvan.
+**Languages**: High Elves speak Thalassian and Common. High Elves with high Intelligence scores can choose their additional languages from among these: Dwarvish (Ironforge), Gnomish, Naaru (Celestial), Draenei, Darnassian, Ursine (Furbolg), Sylvan.
 
 **Alignment**: High Elves are most often Lawful Good.

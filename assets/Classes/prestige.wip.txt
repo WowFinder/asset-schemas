@@ -1,14 +1,14 @@
-(INT/L/mid) Adepto del Kirin Tor
-(INT/L/high) Archimago del Kirin Tor
-* (INT/G/mid) Scribe of the Silver Hand | Escriba de la Mano de Plata
-* (INT/G/high) Avatar of Light's Grace | Avatar de la Gracia de Luz
-* (INT/C/mid) Elemental Anarchist | Anarquista Elemental
-* (INT/C/high) Twilight Harbinger | Presagio del Crepúsculo
-* (INT/E/mid) Necrotic Acolyte | Acólito necrótico
-* (INT/E/high) Scourge Deathweaver | Tejemuerte del Azote
+(intelligence/L/mid) Adepto del Kirin Tor
+(intelligence/L/high) Archimago del Kirin Tor
+* (intelligence/G/mid) Scribe of the Silver Hand | Escriba de la Mano de Plata
+* (intelligence/G/high) Avatar of Light's Grace | Avatar de la Gracia de Luz
+* (intelligence/C/mid) Elemental Anarchist | Anarquista Elemental
+* (intelligence/C/high) Twilight Harbinger | Presagio del Crepúsculo
+* (intelligence/E/mid) Necrotic Acolyte | Acólito necrótico
+* (intelligence/E/high) Scourge Deathweaver | Tejemuerte del Azote
 
-* (INT/E/mid) Fellblade Acolyte | Acólito de hoja vil
-* (INT/E/high) Legion Warlock Lord | Señor Brujo de la Legión
+* (intelligence/E/mid) Fellblade Acolyte | Acólito de hoja vil
+* (intelligence/E/high) Legion Warlock Lord | Señor Brujo de la Legión
 
 (DRD/bear/mid) Bear Warden | Defensor oso
 (DRD/bear/high) Ursine Guardian | Guardián ursino

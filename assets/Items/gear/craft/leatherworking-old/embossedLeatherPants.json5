@@ -8,8 +8,8 @@
     bonuses: {
         armorClass: +2,
         stats: {
-            CON: +1,
-            WIS: +1,
+            constitution: +1,
+            wisdom: +1,
         },
     },
     type: 'misc',

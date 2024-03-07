@@ -20,4 +20,4 @@
 
 **Touch of the Naaru**: Once per day, a Draenei can cast Cure Wounds (rank 2) as an innate ability.
 
-**Languages**: Draenei speak Draenic and Common. Draenei with high Intelligence scores can select their additional languages from among these: Orcish, Darnassian, Eredun (Demonic), Thalassian, Arakkoa, Ursine (Furbolg).
+**Languages**: Draenei speak Draenei and Common. Draenei with high Intelligence scores can select their additional languages from among these: Orcish, Darnassian, Eredun (Demonic), Thalassian, Arakkoa, Ursine (Furbolg).

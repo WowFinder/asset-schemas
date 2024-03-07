@@ -1,4 +1,4 @@
-import { DamageType, Save, Skill, StatKey } from '@wowfinder/ts-enums';
+import { DamageType, Save, Skill, Stat } from '@wowfinder/ts-enums';
 import { RawSpellPower } from './SpellPower';
 
 type Resistances = {
@@ -10,7 +10,7 @@ type Saves = {
 };
 
 type Stats = {
-    [key in StatKey]: number;
+    [key in Stat]: number;
 };
 
 type Skills = {

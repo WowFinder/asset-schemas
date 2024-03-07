@@ -8,12 +8,12 @@
     bonuses: {
         armorClass: +2,
         stats: {
-            STR: +2,
-            DEX: +2,
-            CON: +2,
-            INT: +2,
-            WIS: +2,
-            CHA: +2,
+            strength: +2,
+            dexterity: +2,
+            constitution: +2,
+            intelligence: +2,
+            wisdom: +2,
+            charisma: +2,
         },
         // TODO #464: extra shapeshift per turn
         // TODO #464: cursed wolf form

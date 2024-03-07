@@ -14,19 +14,21 @@
         "lint": "eslint . --ext js,ts",
         "lint:fix": "eslint . --ext js,ts --fix",
         "format": "prettier --write \"{assets,schema}/**/*.{js,ts,json,json5}\"",
-        "test": "jest --verbose --passWithNoTests",
-        "test:coverage": "jest --verbose --passWithNoTests --coverage",
+        "format:check": "prettier --check \"{assets,schema}/**/*.{js,ts,json,json5}\"",
+        "test": "jest --verbose",
+        "test:coverage": "jest --verbose --coverage",
         "build:pre": "rimraf dist",
         "build:ts": "tsc",
         "build:schema": "bash build-schemas.sh",
         "build": "npm-run-all -s build:pre build:ts build:schema",
-        "checks:quick": "lint ",
-        "checks:standard": "npm-run-all -sc lint test build",
+        "checks:quick": "lint",
+        "checks:standard": "npm-run-all -sc lint build test",
+        "checks:full": "npm-run-all -sc lint:fix format build test:coverage",
         "checks:pedantic": "npm-run-all -sc lint:fix format build test:coverage",
         "prepublishOnly": "yarn checks:pedantic && yarn version apply && yarn build"
     },
     "dependencies": {
-        "@wowfinder/ts-enums": "^0.0.2",
+        "@wowfinder/ts-enums": "^0.0.4",
         "ajv": "^8.12.0"
     },
     "devDependencies": {

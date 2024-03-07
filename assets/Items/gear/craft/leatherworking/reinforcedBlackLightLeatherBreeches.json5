@@ -7,9 +7,9 @@
     bonuses: {
         armorClass: +4,
         stats: {
-            STR: +1,
-            DEX: +1,
-            CON: +1,
+            strength: +1,
+            dexterity: +1,
+            constitution: +1,
         },
     },
     type: 'misc',

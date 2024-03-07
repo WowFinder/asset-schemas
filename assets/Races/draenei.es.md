@@ -20,4 +20,4 @@
 
 **Toque de los Naaru**: Una vez al día, un draenei puede lanzar el hechizo Curar heridas (rango 2) como una habilidad innata.
 
-**Idiomas**: Los draenei hablan Draénico y Común. Los draenei con altas puntuaciones de Inteligencia pueden seleccionar sus idiomas adicionales de entre los siguientes: Orco, Darnassiano, Eredun (Demoníaco), Thalassiano, Arakkoa, Ursino (Fúrbolg).
+**Idiomas**: Los draenei hablan Draenei y Común. Los draenei con altas puntuaciones de Inteligencia pueden seleccionar sus idiomas adicionales de entre los siguientes: Orco, Darnassiano, Eredun (Demoníaco), Thalassiano, Arakkoa, Ursino (Fúrbolg).

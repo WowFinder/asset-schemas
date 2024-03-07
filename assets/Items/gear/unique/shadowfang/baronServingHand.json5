@@ -7,7 +7,7 @@
     weight: 3,
     bonuses: {
         stats: {
-            STR: +2,
+            strength: +2,
         },
         // TODO #464: Attack bonuses (+2 dual wielding, incl. nat & double)
     },

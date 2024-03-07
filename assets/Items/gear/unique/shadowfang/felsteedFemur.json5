@@ -13,7 +13,7 @@
                 sides: 8,
                 fixedMod: 1,
             },
-            modStat: 'STR',
+            modStat: 'strength',
         },
     ],
     baseDamage: {

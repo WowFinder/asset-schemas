@@ -1,3 +1,5 @@
+import { ClassTier, Skill } from '@wowfinder/ts-enums';
+
 type BasicClassFeatureEntry = {
     level: number;
     feature: string;
@@ -10,20 +12,20 @@ type ClassFeatureEntry = BasicClassFeatureEntry | ClassAuraEntry;
 
 interface RawClassAsset {
     key: string;
-    tier: string;
+    tier: ClassTier;
     maxLevel: number;
     hd: number;
     bab: number;
-    skl: number;
-    fort?: boolean;
-    refl?: boolean;
-    will?: boolean;
-    arc?: number;
-    div?: number;
-    esp?: number;
-    list?: string;
-    wealth: number;
-    skills: string[];
+    skillRanks: number;
+    goodFortitude?: boolean;
+    goodReflexes?: boolean;
+    goodWill?: boolean;
+    arcane?: number;
+    divine?: number;
+    spontaneous?: number;
+    list?: string; // Must match a spell list key
+    startingWealth: number;
+    skills: Skill[];
     features: ClassFeatureEntry[];
 }
 
