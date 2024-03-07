@@ -1,4 +1,5 @@
-import { Stats } from './Stats';
+import { Stats } from './Bonus';
+import { Skill } from '@wowfinder/ts-enums';
 
 interface RawCharacterAsset {
     key: string;
@@ -16,22 +17,25 @@ interface RawCharacterAsset {
         skin?: string;
         gender?: string;
     };
-    baseStats?: Stats;
+    baseStats?: Stats; // TODO: make required (must add default values to existing assets!)
     race: string; // Must match a race key
     active?: boolean; // Default: true
     classes?: {
+        // Default: [] (empty array)
         cls: string; // Must match a class key
         level: number;
     }[];
-    skillRanks?: { [key: string]: number }; // Keys must match skill keys
+    skillRanks?: { [key in Skill]?: number }; // Keys must match skill keys
     feats?: {
+        // Default: [] (empty array)
         feat: string; // Must match a feat key
-        class?: string; // Must match a class key
+        class?: string; // Must match a class key --or-- be `undefined`
         level: number;
     }[];
     inventory?: {
-        money?: number; // In copper pieces
-        gear: string[]; // Must match qualified item keys
+        // Default: {} (empty object, see defaults for sub-properties)
+        money?: number; // In copper pieces (default: 0)
+        gear?: string[]; // Must match qualified item keys (default: [])
     };
 }
 

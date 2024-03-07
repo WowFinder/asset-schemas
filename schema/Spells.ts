@@ -24,4 +24,4 @@ interface RawSpellAsset extends RawSpellBase {
     descriptors?: string[];
 }
 
-export type { RawSpellAsset };
+export type { RawSpellBase, RawSpellAsset, RawSpellRank };

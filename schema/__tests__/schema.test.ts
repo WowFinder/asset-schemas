@@ -1,21 +1,60 @@
 import { expectTypeTestsToPassAsync } from 'jest-tsd';
-import { resolve } from 'path';
+import { join, resolve } from 'path';
 
-const testableTypes = [
+type AssetsDir = { dirName: string; assets: Assets };
+type Assets = (string | AssetsDir)[];
+
+const testableTypes: Assets = [
     'Adventure',
     'Class',
     'Faction',
     'Race',
-    'Saves',
-    'Speeds',
-    'Stats',
+    {
+        dirName: 'Bonus',
+        assets: [
+            'Resistances',
+            'Saves',
+            'Skills',
+            'Speeds',
+            'SpellPower',
+            'Stats',
+        ],
+    },
 ];
-describe('should pass static type tests', () => {
-    for (const t of testableTypes) {
-        it(`Asset type ${t} should validate`, async () => {
-            await expectTypeTestsToPassAsync(
-                resolve(__dirname, `${t}.test-d.ts`),
-            );
+function testAssetType(fullPath: string, assetTypeName: string): void {
+    it(`should pass static type tests for ${assetTypeName}`, async () => {
+        await expectTypeTestsToPassAsync(fullPath);
+    });
+}
+function testAssetDir(
+    baseDir: string,
+    parentPath: string,
+    dirName: string,
+    entries: Assets,
+): void {
+    for (const entry of entries) {
+        describe(`${dirName}: ${entry}`, () => {
+            if (typeof entry === 'string') {
+                const fullPath = resolve(
+                    baseDir,
+                    parentPath,
+                    dirName,
+                    '__tests__',
+                    `${entry}.test-d.ts`,
+                );
+                testAssetType(fullPath, entry);
+            } else {
+                testAssetDir(
+                    baseDir,
+                    join(parentPath, dirName),
+                    entry.dirName,
+                    entry.assets,
+                );
+            }
         });
     }
+}
+describe('should pass static type tests', () => {
+    const baseDir = resolve(__dirname, '..');
+    testAssetDir(baseDir, '.', '.', testableTypes);
 });

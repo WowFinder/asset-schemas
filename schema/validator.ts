@@ -33,6 +33,7 @@ function getSchema(schemaKey: AssetType): object {
         loadSchema(schemaKey);
     }
     const schema = schemas.get(schemaKey);
+    /* istanbul ignore next */
     if (!schema) {
         throw new Error(`Schema ${schemaKey} not found`);
     }
@@ -41,6 +42,7 @@ function getSchema(schemaKey: AssetType): object {
 
 function validateObject(schemaKey: AssetType, raw: object): void {
     const schema = getSchema(schemaKey);
+    /* istanbul ignore next */
     if (!ajv.validate(schema, raw)) {
         throw new Error(ajv.errorsText());
     }
