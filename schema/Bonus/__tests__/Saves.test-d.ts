@@ -1,5 +1,5 @@
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
-import { Saves } from '../Saves';
+import { Saves } from '..';
 
 const sampleSaves = {
     fort: 0,
@@ -28,5 +28,8 @@ describe('Saves', () => {
             ...sampleSaves,
             will: undefined,
         });
+    });
+    it('should be usable with the Partial utility type', () => {
+        expectAssignable<Partial<Saves>>({});
     });
 });

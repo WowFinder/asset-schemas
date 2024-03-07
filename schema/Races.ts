@@ -1,6 +1,4 @@
-import { Saves } from 'Saves';
-import { Speeds } from 'Speeds';
-import { Stats } from 'Stats';
+import { Saves, Speeds, Stats } from 'Bonus';
 
 interface RawRaceAsset {
     key: string;
