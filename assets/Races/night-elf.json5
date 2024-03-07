@@ -2,12 +2,12 @@
     key: 'night-elf',
     size: 0,
     statMods: {
-        STR: 0,
-        DEX: 2,
-        CON: -2,
-        INT: 2,
-        WIS: 0,
-        CHA: 0,
+        strength: 0,
+        dexterity: 2,
+        constitution: -2,
+        intelligence: 2,
+        wisdom: 0,
+        charisma: 0,
     },
     skillMods: {
         perception: 2,
@@ -21,7 +21,7 @@
         'thalassian',
         'ursine',
     ],
-    commonAligns: ['NG'],
+    commonAlignments: ['neutralGood'],
     speeds: {
         base: 30,
     },

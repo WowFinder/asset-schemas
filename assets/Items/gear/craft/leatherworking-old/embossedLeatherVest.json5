@@ -7,7 +7,7 @@
     weight: 15,
     bonuses: {
         stats: {
-            CON: +1,
+            constitution: +1,
         },
     },
     type: 'light',

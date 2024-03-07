@@ -7,7 +7,7 @@
     bonuses: {
         armorClass: +4,
         stats: {
-            CHA: +2,
+            charisma: +2,
         },
     },
     type: 'misc',

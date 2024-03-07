@@ -12,7 +12,7 @@
             baseRoll: {
                 sides: 8,
             },
-            modStat: 'STR',
+            modStat: 'strength',
         },
     ],
     groups: ['bows'],

@@ -7,7 +7,7 @@
     weight: 2,
     bonuses: {
         stats: {
-            DEX: +4,
+            dexterity: +4,
         },
         skills: {
             stealth: +4,

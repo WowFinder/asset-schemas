@@ -8,8 +8,8 @@
     weight: 3,
     bonuses: {
         stats: {
-            DEX: +1,
-            CON: +1,
+            dexterity: +1,
+            constitution: +1,
         },
     },
     damage: [

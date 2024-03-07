@@ -2,16 +2,16 @@ import { expectAssignable, expectNotAssignable } from 'jest-tsd';
 import type { Stats } from '..';
 
 const fullStats = {
-    STR: 10,
-    DEX: 10,
-    CON: 10,
-    INT: 10,
-    WIS: 10,
-    CHA: 10,
+    strength: 10,
+    dexterity: 10,
+    constitution: 10,
+    intelligence: 10,
+    wisdom: 10,
+    charisma: 10,
 };
 
 const partialStats = {
-    STR: 10,
+    strength: 10,
 };
 
 describe('Stats', () => {

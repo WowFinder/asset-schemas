@@ -1,12 +1,12 @@
-import { Stats } from './Bonus';
-import { Skill } from '@wowfinder/ts-enums';
+import { Skills, Stats } from './Bonus';
+import { Alignment } from '@wowfinder/ts-enums';
 
 interface RawCharacterAsset {
     key: string;
     notes?: string;
     personal: {
         fullName: string;
-        align?: 'LG' | 'NG' | 'CG' | 'LN' | 'NN' | 'CN' | 'LE' | 'NE' | 'CE';
+        alignment?: Alignment; // Default: `Alignment.neutralNeutral`
         height?: number; // In inches
         weight?: number; // In pounds
         age?: number; // In Azeroth years
@@ -17,15 +17,15 @@ interface RawCharacterAsset {
         skin?: string;
         gender?: string;
     };
-    baseStats?: Stats; // TODO: make required (must add default values to existing assets!)
+    baseStats: Stats;
     race: string; // Must match a race key
     active?: boolean; // Default: true
     classes?: {
         // Default: [] (empty array)
-        cls: string; // Must match a class key
+        class: string; // Must match a class key
         level: number;
     }[];
-    skillRanks?: { [key in Skill]?: number }; // Keys must match skill keys
+    skillRanks?: Partial<Skills>; // Default: {} (empty object)
     feats?: {
         // Default: [] (empty array)
         feat: string; // Must match a feat key

@@ -1,3 +1,4 @@
+import { Alignment, Languages } from '@wowfinder/ts-enums';
 import { Saves, Speeds, Stats } from 'Bonus';
 
 interface RawRaceAsset {
@@ -7,9 +8,9 @@ interface RawRaceAsset {
     skillMods?: { [key: string]: number };
     bonusSkillRanks?: number;
     bonusStartingFeats?: number;
-    initialLangs: string[];
-    additionalLangs: string[];
-    commonAligns: string[];
+    initialLangs: Languages[];
+    additionalLangs: Languages[];
+    commonAlignments: Alignment[];
     speeds: Speeds;
     saves?: Saves;
 }

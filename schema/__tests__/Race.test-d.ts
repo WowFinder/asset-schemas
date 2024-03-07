@@ -1,20 +1,28 @@
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
+import { Alignment, Languages } from '@wowfinder/ts-enums';
 import { RawRaceAsset } from '../Races';
 
 const minimalRace = {
     key: 'minimal-test-race',
     size: 0,
     statMods: {
-        STR: 0,
-        DEX: 0,
-        CON: 0,
-        INT: 0,
-        WIS: 0,
-        CHA: 0,
+        strength: 0,
+        dexterity: 0,
+        constitution: 0,
+        intelligence: 0,
+        wisdom: 0,
+        charisma: 0,
     },
-    initialLangs: ['common', 'low common'],
-    additionalLangs: ['elvish', 'dwarvish'],
-    commonAligns: ['LG', 'NG', 'CG', 'LN', 'NN', 'CN'],
+    initialLangs: [Languages.common],
+    additionalLangs: [Languages.darnassian, Languages.dwarven],
+    commonAlignments: [
+        Alignment.lawfulGood,
+        Alignment.lawfulNeutral,
+        Alignment.neutralGood,
+        Alignment.neutralNeutral,
+        Alignment.chaoticGood,
+        Alignment.chaoticNeutral,
+    ],
     speeds: {
         base: 0,
     },
@@ -22,7 +30,7 @@ const minimalRace = {
 
 const fullRace = {
     ...minimalRace,
-    key: 'ful-test-race',
+    key: 'full-test-race',
     skillMods: {
         testSkill1: 1,
         testSkill2: 2,

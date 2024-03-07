@@ -7,8 +7,8 @@
     weight: 2,
     bonuses: {
         stats: {
-            INT: +4,
-            CHA: +4,
+            intelligence: +4,
+            charisma: +4,
         },
         spellPower: {
             void: +4,

@@ -6,8 +6,8 @@
     weight: 12,
     bonuses: {
         stats: {
-            STR: +2,
-            CON: +2,
+            strength: +2,
+            constitution: +2,
         },
     },
     acBonus: +7,

@@ -7,7 +7,7 @@
     bonuses: {
         armorClass: +4,
         stats: {
-            INT: +2,
+            intelligence: +2,
         },
     },
     type: 'misc',
