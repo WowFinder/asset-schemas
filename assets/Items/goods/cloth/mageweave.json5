@@ -1,6 +1,0 @@
-{
-    $type: 'Cloth',
-    key: 'mageweave',
-    iLevel: 40,
-    rarity: 'common',
-}

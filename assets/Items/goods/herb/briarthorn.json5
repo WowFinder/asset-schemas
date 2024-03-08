@@ -1,6 +1,0 @@
-{
-    $type: 'Herb',
-    key: 'briarthorn',
-    iLevel: 15,
-    rarity: 'common',
-}

@@ -1,6 +1,0 @@
-{
-    $type: 'Gem',
-    key: 'lesserMoonstone',
-    iLevel: 30,
-    rarity: 'uncommon',
-}

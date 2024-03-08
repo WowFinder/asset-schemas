@@ -1,6 +1,0 @@
-{
-    $type: 'Gem',
-    key: 'azerothianDiamond',
-    iLevel: 60,
-    rarity: 'uncommon',
-}
