@@ -1,6 +1,0 @@
-{
-    $type: 'Cloth',
-    key: 'linen',
-    iLevel: 1,
-    rarity: 'common',
-}

@@ -1,6 +1,0 @@
-{
-    $type: 'Enchanting',
-    key: 'vision',
-    iLevel: 35,
-    rarity: 'common',
-}
