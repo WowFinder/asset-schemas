@@ -1331,9 +1331,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wowfinder/assets-schema@workspace:.":
+"@wowfinder/asset-schemas@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@wowfinder/assets-schema@workspace:."
+  resolution: "@wowfinder/asset-schemas@workspace:."
   dependencies:
     "@faker-js/faker": "npm:^8.4.1"
     "@tsconfig/node20": "npm:^20.1.2"
