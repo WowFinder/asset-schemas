@@ -1,13 +1,11 @@
-# WowFinder assets
+# WowFinder asset-schemas
 
-⚠️ **Note:** this repository is likely to undergo some restructuring in the near future, to make licensing much simpler. We intend to keep as much of it as we can under free and open licenses, but there are unavoidable dependencies on third-party IPs that need to be studied very carefully. See the Licensing section below for deeper details of what you can safely use at the moment.
+Types and validation for data assets in the WowFinder project.
 
 ## Repository status
 
-Due to the upcoming split of the repository, assume everything here is unstable and subject to change without notice.
-
-Because the repository is currently "private", Sonar analysis for it is not available. Coding in this repository will follow the same standards as other repositories in the project, but the ability to automatically review and enforce them is currently unavailable.
-
 ## Licensing
 
-The built package, as well as any source necessary to build them, is available under the [GPL3 license](GPL3.txt). Content under the assets folder in the repository is pending in-depth review (note that this content is **not** included in built packages).
+This package is offered under the GNU General Public License (GPL) version 3.0. See the [GPL3](./GPL3.txt) for details.
+
+⚠️ Note: when using the public `git` repository, you will find a reference to a separate project (`raw-assets`). While that repository is available to the public, it is **not** covered by the GPL3 license. The contents of that package are not included in the built package that can be installed via `npm` or `yarn`. Given the licensing complexity of those contents (most of they are based on third-party intellectual properties), there is no plan to publish them on the npmjs.com or any other package registry.

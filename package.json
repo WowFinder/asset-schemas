@@ -1,10 +1,10 @@
 {
-    "name": "@wowfinder/assets",
-    "version": "0.0.3",
-    "description": "Data and media assets for the WowFinder campaign and applications",
+    "name": "@wowfinder/assets-schema",
+    "version": "0.0.4",
+    "description": "Asset schemas and validation for the WowFinder project",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "repository": "https://github.com/WowFinder/assets.git",
+    "repository": "https://github.com/WowFinder/assets-schema.git",
     "author": "Edurne Pascual <herenvardo@gmail.com>",
     "license": "Multiple (mainly GPL3)",
     "files": [
