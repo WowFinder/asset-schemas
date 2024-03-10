@@ -1331,9 +1331,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wowfinder/assets-schema@workspace:.":
+"@wowfinder/asset-schemas@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@wowfinder/assets-schema@workspace:."
+  resolution: "@wowfinder/asset-schemas@workspace:."
   dependencies:
     "@faker-js/faker": "npm:^8.4.1"
     "@tsconfig/node20": "npm:^20.1.2"
@@ -1343,7 +1343,7 @@ __metadata:
     "@types/node": "npm:^20.11.22"
     "@typescript-eslint/eslint-plugin": "npm:^7.1.0"
     "@typescript-eslint/parser": "npm:^7.1.0"
-    "@wowfinder/ts-enums": "npm:^0.0.4"
+    "@wowfinder/ts-enums": "npm:^0.0.5"
     ajv: "npm:^8.12.0"
     eslint: "npm:^8.57.0"
     eslint-config-prettier: "npm:^9.1.0"
@@ -1367,10 +1367,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@wowfinder/ts-enums@npm:^0.0.4":
-  version: 0.0.4
-  resolution: "@wowfinder/ts-enums@npm:0.0.4"
-  checksum: 10c0/c8354473cf77f6ccdc81ee8c7146935bcc4dbc6c0c555eb5c6d2064ad996b7349acfa153a7fe3b7bbaf73bb6641125c48d3d1ebc319cb307c462b5d6aa8a985f
+"@wowfinder/ts-enums@npm:^0.0.5":
+  version: 0.0.5
+  resolution: "@wowfinder/ts-enums@npm:0.0.5"
+  checksum: 10c0/741daac3edfeb564524fea28c5380bc233490407db2713e27630cf28cd56c2a3a21d4386d3f1bb2d68dea7ea9acc675ce2642807dc2bdae73c8e8ea208df81ad
   languageName: node
   linkType: hard
 

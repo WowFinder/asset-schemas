@@ -1,6 +1,6 @@
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
 import { RawClassAsset } from '../Classes';
-import { ClassTier, Skill } from '@wowfinder/ts-enums';
+import { Aura, ClassTier, Skill } from '@wowfinder/ts-enums';
 
 const minimalClass = {
     key: 'sampleClass',
@@ -37,11 +37,11 @@ const fullClass = {
         },
         {
             level: 6,
-            aura: 'sampleAura1',
+            aura: Aura.commanding,
         },
         {
             level: 10,
-            aura: 'sampleAura1',
+            aura: Aura.commanding,
         },
     ],
 };

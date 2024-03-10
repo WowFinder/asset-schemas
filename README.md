@@ -2,7 +2,27 @@
 
 Types and validation for data assets in the WowFinder project.
 
-## Repository status
+## Repository / development status
+
+-   **Read / fetch**: unstable ⚠️
+-   **Write / push**: possible (manual) ⚠️
+-   **Development**: possible (manual) ⚠️
+
+### Sonar public analysis
+
+Overview: https://sonarcloud.io/project/overview?id=WowFinder_ts-utils
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=WowFinder_ts-utils&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=WowFinder_ts-utils)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=WowFinder_ts-utils&metric=coverage)](https://sonarcloud.io/summary/new_code?id=WowFinder_ts-utils)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=WowFinder_ts-utils&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=WowFinder_ts-utils)
+
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=WowFinder_ts-utils&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=WowFinder_ts-utils)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=WowFinder_ts-utils&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=WowFinder_ts-utils)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=WowFinder_ts-utils&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=WowFinder_ts-utils)
+
+### Internal dependencies
+
+-   [ts-enums](https://github.com/WowFinder/ts-enums)
 
 ## Licensing
 

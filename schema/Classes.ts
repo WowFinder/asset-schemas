@@ -1,4 +1,4 @@
-import { ClassTier, Skill } from '@wowfinder/ts-enums';
+import { ClassTier, Skill, Aura } from '@wowfinder/ts-enums';
 
 type BasicClassFeatureEntry = {
     level: number;
@@ -6,7 +6,7 @@ type BasicClassFeatureEntry = {
 };
 type ClassAuraEntry = {
     level: number;
-    aura: string;
+    aura: Aura;
 };
 type ClassFeatureEntry = BasicClassFeatureEntry | ClassAuraEntry;
 
