@@ -1,5 +1,5 @@
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
-import { Alignment, Languages } from '@wowfinder/ts-enums';
+import { Alignment, Languages, Skill } from '@wowfinder/ts-enums';
 import { RawRaceAsset } from '../Races';
 
 const minimalRace = {
@@ -32,14 +32,14 @@ const fullRace = {
     ...minimalRace,
     key: 'full-test-race',
     skillMods: {
-        testSkill1: 1,
-        testSkill2: 2,
+        [Skill.acrobatics]: 1,
+        [Skill.stealth]: 2,
     },
     bonusSkillRanks: 1,
     bonusStartingFeats: 1,
     saves: {
-        fort: 0,
-        refl: 0,
+        fortitude: 0,
+        reflexes: 0,
         will: 0,
     },
 };

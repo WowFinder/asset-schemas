@@ -22,14 +22,14 @@
         "build:ts": "tsc",
         "build:schema": "bash build-schemas.sh",
         "build": "npm-run-all -s build:pre build:ts build:schema",
-        "checks:quick": "lint",
+        "checks:quick": "npm-run-all -sc lint",
         "checks:standard": "npm-run-all -sc lint build test",
         "checks:full": "npm-run-all -sc lint:fix format build test:coverage",
         "checks:pedantic": "npm-run-all -sc lint:fix format build test:coverage",
         "prepublishOnly": "yarn checks:pedantic && yarn version apply && yarn build"
     },
     "dependencies": {
-        "@wowfinder/ts-enums": "^0.0.4",
+        "@wowfinder/ts-enums": "^0.0.5",
         "ajv": "^8.12.0"
     },
     "devDependencies": {

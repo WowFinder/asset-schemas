@@ -1,3 +1,5 @@
+import { SpellDescriptor, SpellFlag } from '@wowfinder/ts-enums';
+
 interface RawSpellBase {
     range?: string;
     duration?: string;
@@ -17,11 +19,11 @@ interface RawSpellRank extends RawSpellBase {
 interface RawSpellAsset extends RawSpellBase {
     key: string;
     ranks: RawSpellRank[];
-    sch: string;
+    school: string;
     components: string[];
     save?: any;
-    flags?: string[];
-    descriptors?: string[];
+    flags?: SpellFlag[];
+    descriptors?: SpellDescriptor[];
 }
 
 export type { RawSpellBase, RawSpellAsset, RawSpellRank };

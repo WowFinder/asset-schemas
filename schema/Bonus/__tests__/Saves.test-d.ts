@@ -2,8 +2,8 @@ import { expectAssignable, expectNotAssignable } from 'jest-tsd';
 import { Saves } from '..';
 
 const sampleSaves = {
-    fort: 0,
-    refl: 0,
+    fortitude: 0,
+    reflexes: 0,
     will: 0,
 };
 
@@ -11,16 +11,16 @@ describe('Saves', () => {
     it('should accept a sample saves object', () => {
         expectAssignable<Saves>(sampleSaves);
     });
-    it('should not accept a saves object with missing fort', () => {
+    it('should not accept a saves object with missing fortitude', () => {
         expectNotAssignable<Saves>({
             ...sampleSaves,
-            fort: undefined,
+            fortitude: undefined,
         });
     });
-    it('should not accept a saves object with missing refl', () => {
+    it('should not accept a saves object with missing reflexes', () => {
         expectNotAssignable<Saves>({
             ...sampleSaves,
-            refl: undefined,
+            reflexes: undefined,
         });
     });
     it('should not accept a saves object with missing will', () => {

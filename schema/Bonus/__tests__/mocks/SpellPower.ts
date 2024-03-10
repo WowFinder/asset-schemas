@@ -2,15 +2,15 @@ import { CastingMode, School, SubSchool } from '@wowfinder/ts-enums';
 
 function mockSchools(defaultValue: number): { [key in School]: number } {
     return {
-        [School.abj]: defaultValue,
-        [School.con]: defaultValue,
-        [School.div]: defaultValue,
-        [School.enc]: defaultValue,
-        [School.evo]: defaultValue,
-        [School.ill]: defaultValue,
-        [School.nec]: defaultValue,
-        [School.tra]: defaultValue,
-        [School.uni]: defaultValue,
+        [School.abjuration]: defaultValue,
+        [School.conjuration]: defaultValue,
+        [School.divination]: defaultValue,
+        [School.enchantment]: defaultValue,
+        [School.evocation]: defaultValue,
+        [School.illusion]: defaultValue,
+        [School.necromancy]: defaultValue,
+        [School.transmutation]: defaultValue,
+        [School.universal]: defaultValue,
     };
 }
 
