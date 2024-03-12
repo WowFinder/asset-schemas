@@ -6,8 +6,8 @@ const minimalClass = {
     key: 'sampleClass',
     tier: ClassTier.base,
     maxLevel: 1,
-    hd: 6,
-    bab: 0.5,
+    hitDie: 6,
+    baseAttackProgression: 0.5,
     skillRanks: 0,
     startingWealth: 0,
     skills: [],
@@ -17,8 +17,8 @@ const fullClass = {
     key: 'sampleClass',
     tier: ClassTier.prestige,
     maxLevel: 20,
-    hd: 12,
-    bab: 1,
+    hitDie: 12,
+    baseAttackProgression: 1,
     skillRanks: 12,
     startingWealth: 999999,
     skills: [Skill.acrobatics, Skill.alchemy, Skill.perception],
@@ -68,13 +68,16 @@ describe('RawClassAsset', () => {
             maxLevel: undefined,
         });
     });
-    it('should not accept a class with missing hd', () => {
-        expectNotAssignable<RawClassAsset>({ ...minimalClass, hd: undefined });
+    it('should not accept a class with missing hitDie', () => {
+        expectNotAssignable<RawClassAsset>({
+            ...minimalClass,
+            hitDie: undefined,
+        });
     });
     it('should not accept a class with missing BaB', () => {
         expectNotAssignable<RawClassAsset>({
             ...minimalClass,
-            bab: undefined,
+            baseAttackProgression: undefined,
         });
     });
     it('should not accept a class with missing skillRanks', () => {
