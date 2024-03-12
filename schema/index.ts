@@ -1,5 +1,5 @@
 export type * from './Adventures';
-export type * from './Characters';
+export type * from './Creature';
 export type * from './Classes';
 export type * from './Factions';
 export type * from './Races';

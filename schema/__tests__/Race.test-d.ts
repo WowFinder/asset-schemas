@@ -5,6 +5,7 @@ import { RawRaceAsset } from '../Races';
 const minimalRace = {
     key: 'minimal-test-race',
     size: 0,
+    racialPoints: 10,
     statMods: {
         strength: 0,
         dexterity: 0,
@@ -13,8 +14,8 @@ const minimalRace = {
         wisdom: 0,
         charisma: 0,
     },
-    initialLangs: [Languages.common],
-    additionalLangs: [Languages.darnassian, Languages.dwarven],
+    initialLanguages: [Languages.common],
+    additionalLanguages: [Languages.darnassian, Languages.dwarven],
     commonAlignments: [
         Alignment.lawfulGood,
         Alignment.lawfulNeutral,
