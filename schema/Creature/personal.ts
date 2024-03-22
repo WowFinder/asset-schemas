@@ -1,13 +1,14 @@
 import { Alignment } from '@wowfinder/ts-enums';
 
-interface BaseCreaturePersonal {
+interface RawPersonalDetails {
     fullName: string;
-    alignment?: Alignment; // Default: `Alignment.neutralNeutral`
+    /** Default: True Neutral (`Alignment.neutralNeutral`) */
+    alignment?: Alignment;
+    /** Recommended default: 143 lbs (~65 kg) */
     weight?: number; // In pounds
-}
-
-interface CharacterPersonal extends BaseCreaturePersonal {
+    /** Recommended default: 63 inches (5'3") (~ 1m60cm) */
     height?: number; // In inches
+    /** Recommended default: 20 years */
     age?: number; // In Azeroth years
     faith?: string;
     origin?: string;
@@ -17,4 +18,4 @@ interface CharacterPersonal extends BaseCreaturePersonal {
     gender?: string;
 }
 
-export type { BaseCreaturePersonal, CharacterPersonal };
+export type { RawPersonalDetails };
