@@ -1,4 +1,4 @@
-import { RawCreatureAsset } from './base';
+import type { RawCreatureAsset } from './base';
 
 interface RawCharacterAsset extends RawCreatureAsset {
     /** Default: true */

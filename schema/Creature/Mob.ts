@@ -1,7 +1,5 @@
-import { RawCreatureAsset } from './base';
+import type { RawCreatureAsset } from './base';
 
-interface RawMobAsset extends RawCreatureAsset {
-    templates: string[]; // Must match a template key
-}
+interface RawMobAsset extends RawCreatureAsset {}
 
 export type { RawMobAsset };

@@ -1,9 +1,9 @@
-import type { Resistances } from '..';
+import type { RawResistances } from '..';
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
 
 describe('Resistances', () => {
     it('should accept a full set of resistances', () => {
-        expectAssignable<Resistances>({
+        expectAssignable<RawResistances>({
             bludgeoning: 10,
             piercing: 10,
             slashing: 10,
@@ -17,12 +17,12 @@ describe('Resistances', () => {
         });
     });
     it('should *not* accept a partial set of resistances', () => {
-        expectNotAssignable<Resistances>({
+        expectNotAssignable<RawResistances>({
             arcane: 10,
         });
     });
     it('should be usable with the Partial utility type', () => {
-        expectAssignable<Partial<Resistances>>({
+        expectAssignable<Partial<RawResistances>>({
             arcane: 10,
         });
     });

@@ -1,5 +1,5 @@
-import { Skills, Stats } from 'Bonus';
-import { RawPersonalDetails } from './personal';
+import type { RawSkills, RawStats } from 'Bonus';
+import type { RawPersonalDetails } from './Personal';
 
 type RawClassEntry = {
     class: string; // Must match a class key
@@ -7,6 +7,13 @@ type RawClassEntry = {
 };
 
 type RawClassEntries = RawClassEntry[];
+
+type RawTemplateEntry = {
+    template: string; // Must match a template key
+    count?: number; // Default: 1
+};
+
+type RawTemplateEntries = RawTemplateEntry[];
 
 type RawFeatSelection = {
     feat: string; // Must match a feat key
@@ -29,15 +36,17 @@ type RawInventory = {
 
 interface RawCreatureAsset {
     key: string;
-    baseStats: Stats;
+    baseStats: RawStats;
     race: string; // Must match a race key
     /** Default: empty string */
     notes?: string;
     personal: RawPersonalDetails;
     /** Default: [] (empty array) */
     classes?: RawClassEntries;
+    /** Default: [] (empty array) */
+    templates?: RawTemplateEntries;
     /** Default: {} (empty object) */
-    skillRanks?: Partial<Skills>;
+    skillRanks?: Partial<RawSkills>;
     /** Default: [] (empty array) */
     feats?: RawFeatSelections;
     /** Default: {} (empty object) */

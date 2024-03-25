@@ -1,5 +1,5 @@
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
-import { Saves } from '..';
+import type { RawSaves } from '..';
 
 const sampleSaves = {
     fortitude: 0,
@@ -9,27 +9,27 @@ const sampleSaves = {
 
 describe('Saves', () => {
     it('should accept a sample saves object', () => {
-        expectAssignable<Saves>(sampleSaves);
+        expectAssignable<RawSaves>(sampleSaves);
     });
     it('should not accept a saves object with missing fortitude', () => {
-        expectNotAssignable<Saves>({
+        expectNotAssignable<RawSaves>({
             ...sampleSaves,
             fortitude: undefined,
         });
     });
     it('should not accept a saves object with missing reflexes', () => {
-        expectNotAssignable<Saves>({
+        expectNotAssignable<RawSaves>({
             ...sampleSaves,
             reflexes: undefined,
         });
     });
     it('should not accept a saves object with missing will', () => {
-        expectNotAssignable<Saves>({
+        expectNotAssignable<RawSaves>({
             ...sampleSaves,
             will: undefined,
         });
     });
     it('should be usable with the Partial utility type', () => {
-        expectAssignable<Partial<Saves>>({});
+        expectAssignable<Partial<RawSaves>>({});
     });
 });

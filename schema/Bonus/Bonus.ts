@@ -1,29 +1,29 @@
 import { DamageType, Save, Skill, Stat } from '@wowfinder/ts-enums';
-import { RawSpellPower } from './SpellPower';
+import type { RawSpellPower } from './SpellPower';
 
-type Resistances = {
+type RawResistances = {
     [key in DamageType]: number;
 };
 
-type Saves = {
+type RawSaves = {
     [key in Save]: number;
 };
 
-type Stats = {
+type RawStats = {
     [key in Stat]: number;
 };
 
-type Skills = {
+type RawSkills = {
     [key in Skill]: number;
 };
 
 interface RawBonus {
     armorClass?: number;
-    stats?: Partial<Stats>;
+    stats?: Partial<RawStats>;
     spellPower?: RawSpellPower;
-    skills?: Partial<Skills>;
-    resistances?: Partial<Resistances>;
-    saves?: Partial<Saves>;
+    skills?: Partial<RawSkills>;
+    resistances?: Partial<RawResistances>;
+    saves?: Partial<RawSaves>;
 }
 
-export type { RawBonus, Resistances, Saves, Skills, Stats };
+export type { RawBonus, RawResistances, RawSaves, RawSkills, RawStats };

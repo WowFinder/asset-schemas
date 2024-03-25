@@ -1,6 +1,10 @@
 import { faker } from '@faker-js/faker';
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
-import { RawAdventureAsset, RewardEntries, Rewards } from '../Adventures';
+import type {
+    RawAdventureAsset,
+    RawRewardEntries,
+    RawRewards,
+} from '../Adventures';
 
 const minimalAdventure = {
     key: 'minimalAdventure',
@@ -8,16 +12,16 @@ const minimalAdventure = {
     date: '1899-12-30',
     rewards: {},
 };
-const randomRewardEntries = (): RewardEntries => {
-    const result: RewardEntries = {};
+const randomRewardEntries = (): RawRewardEntries => {
+    const result: RawRewardEntries = {};
     const count = faker.number.int({ min: 3, max: 20 });
     for (let i = 0; i < count; i++) {
         result[faker.string.symbol()] = faker.number.int();
     }
     return result;
 };
-const randomRewards = (): Rewards => {
-    const result: Rewards = {};
+const randomRewards = (): RawRewards => {
+    const result: RawRewards = {};
     const count = faker.number.int({ min: 3, max: 20 });
     for (let i = 0; i < count; i++) {
         result[faker.string.symbol()] = randomRewardEntries();

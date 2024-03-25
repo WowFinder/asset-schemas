@@ -1,5 +1,5 @@
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
-import type { Stats } from '..';
+import type { RawStats } from '..';
 
 const fullStats = {
     strength: 10,
@@ -16,12 +16,12 @@ const partialStats = {
 
 describe('Stats', () => {
     it('should accept a full set of stats', () => {
-        expectAssignable<Stats>(fullStats);
+        expectAssignable<RawStats>(fullStats);
     });
     it('should *not* accept a partial set of stats', () => {
-        expectNotAssignable<Stats>(partialStats);
+        expectNotAssignable<RawStats>(partialStats);
     });
     it('should be usable with the Partial utility type', () => {
-        expectAssignable<Partial<Stats>>(partialStats);
+        expectAssignable<Partial<RawStats>>(partialStats);
     });
 });

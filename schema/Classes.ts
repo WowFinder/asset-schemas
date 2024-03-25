@@ -1,14 +1,14 @@
 import { ClassTier, Skill, Aura, CastingMode, Save } from '@wowfinder/ts-enums';
 
-type BasicClassFeatureEntry = {
+type RawBasicClassFeatureEntry = {
     level: number;
     feature: string;
 };
-type ClassAuraEntry = {
+type RawClassAuraEntry = {
     level: number;
     aura: Aura;
 };
-type ClassFeatureEntry = BasicClassFeatureEntry | ClassAuraEntry;
+type RawClassFeatureEntry = RawBasicClassFeatureEntry | RawClassAuraEntry;
 
 interface RawClassAsset {
     key: string;
@@ -26,7 +26,7 @@ interface RawClassAsset {
     list?: string; // Must match a spell list key
     startingWealth: number;
     skills: Skill[];
-    features: ClassFeatureEntry[];
+    features: RawClassFeatureEntry[];
 }
 
-export type { RawClassAsset };
+export type { RawClassAsset, RawClassFeatureEntry };

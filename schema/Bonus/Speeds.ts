@@ -1,4 +1,4 @@
-interface Speeds {
+interface RawSpeeds {
     base: number;
     burrow?: number;
     climb?: number;
@@ -7,4 +7,4 @@ interface Speeds {
     maneuverability?: string;
 }
 
-export type { Speeds };
+export type { RawSpeeds };

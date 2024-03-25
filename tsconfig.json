@@ -5,7 +5,7 @@
         "allowJs": true,
         "declaration": true,
         "module": "commonjs",
-        "lib": ["es2022"],
+        "lib": ["es2023", "esnext"],
         "esModuleInterop": true,
         "noImplicitAny": true,
         "sourceMap": true,
@@ -15,6 +15,5 @@
         "moduleResolution": "node",
         "resolveJsonModule": true
     },
-    "include": ["schema/**/*"],
-    "exclude": ["**/__tests__"]
+    "include": ["schema/**/*"]
 }
