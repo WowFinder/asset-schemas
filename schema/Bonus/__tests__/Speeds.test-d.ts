@@ -1,5 +1,5 @@
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
-import { Speeds } from '..';
+import { RawSpeeds } from '..';
 
 const minimalSpeeds = {
     base: 0,
@@ -16,13 +16,13 @@ const fullSpeeds = {
 
 describe('Speeds', () => {
     it('should accept a minimal speeds object', () => {
-        expectAssignable<Speeds>(minimalSpeeds);
+        expectAssignable<RawSpeeds>(minimalSpeeds);
     });
     it('should accept a full speeds object', () => {
-        expectAssignable<Speeds>(fullSpeeds);
+        expectAssignable<RawSpeeds>(fullSpeeds);
     });
     it('should not accept a speeds object with missing base', () => {
-        expectNotAssignable<Speeds>({
+        expectNotAssignable<RawSpeeds>({
             ...minimalSpeeds,
             base: undefined,
         });

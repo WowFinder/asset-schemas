@@ -1,16 +1,16 @@
-type SpellEntry = {
+type RawSpellEntry = {
     spell: string;
     rank: number;
 };
-type SpellEntryCollection = {
-    [key: string]: SpellEntry[];
+type RawSpellEntryCollection = {
+    [key: string]: RawSpellEntry[];
     /* Mapped types like this don't work well with typescript-json-schema:
     [key in `${number}`]: SpellEntry[]; */
 };
 interface RawSpellListAsset {
     key: string;
     core?: boolean;
-    spells: SpellEntryCollection;
+    spells: RawSpellEntryCollection;
 }
 
-export type { RawSpellListAsset, SpellEntry, SpellEntryCollection };
+export type { RawSpellListAsset, RawSpellEntry, RawSpellEntryCollection };
