@@ -1,5 +1,5 @@
-import { RawSkills, RawStats } from 'Bonus';
-import { RawPersonalDetails } from './Personal';
+import type { RawSkills, RawStats } from 'Bonus';
+import type { RawPersonalDetails } from './Personal';
 
 type RawClassEntry = {
     class: string; // Must match a class key

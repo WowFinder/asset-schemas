@@ -1,5 +1,5 @@
 import { Skill } from '@wowfinder/ts-enums';
-import { RawSkills } from '..';
+import type { RawSkills } from '..';
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
 import { mockSkills } from './mocks/Skills';
 

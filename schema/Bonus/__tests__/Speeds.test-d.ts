@@ -1,5 +1,5 @@
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
-import { RawSpeeds } from '..';
+import type { RawSpeeds } from '..';
 
 const minimalSpeeds = {
     base: 0,

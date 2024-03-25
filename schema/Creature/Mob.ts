@@ -1,4 +1,4 @@
-import { RawCreatureAsset } from './base';
+import type { RawCreatureAsset } from './base';
 
 interface RawMobAsset extends RawCreatureAsset {}
 

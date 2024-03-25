@@ -1,6 +1,10 @@
 import { faker } from '@faker-js/faker';
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
-import { RawAdventureAsset, RawRewardEntries, RawRewards } from '../Adventures';
+import type {
+    RawAdventureAsset,
+    RawRewardEntries,
+    RawRewards,
+} from '../Adventures';
 
 const minimalAdventure = {
     key: 'minimalAdventure',

@@ -1,5 +1,5 @@
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
-import { RawFactionAsset } from '../Factions';
+import type { RawFactionAsset } from '../Factions';
 
 const sampleFaction = {
     key: 0,

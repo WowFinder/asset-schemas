@@ -1,5 +1,5 @@
 import { DamageType, Save, Skill, Stat } from '@wowfinder/ts-enums';
-import { RawSpellPower } from './SpellPower';
+import type { RawSpellPower } from './SpellPower';
 
 type RawResistances = {
     [key in DamageType]: number;

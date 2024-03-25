@@ -1,4 +1,4 @@
-import { RawSpellPower } from '..';
+import type { RawSpellPower } from '..';
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
 import {
     mockCastingModes,

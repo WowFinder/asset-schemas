@@ -1,6 +1,6 @@
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
 import { Alignment, Languages, Skill } from '@wowfinder/ts-enums';
-import { RawRaceAsset } from '../Races';
+import type { RawRaceAsset } from '../Races';
 
 const minimalRace = {
     key: 'minimal-test-race',

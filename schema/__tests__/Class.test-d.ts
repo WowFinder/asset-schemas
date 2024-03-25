@@ -1,6 +1,6 @@
-import { expectAssignable, expectNotAssignable } from 'jest-tsd';
-import { RawClassAsset } from '../Classes';
 import { Aura, ClassTier, Skill } from '@wowfinder/ts-enums';
+import { expectAssignable, expectNotAssignable } from 'jest-tsd';
+import type { RawClassAsset } from '../Classes';
 
 const minimalClass = {
     key: 'sampleClass',

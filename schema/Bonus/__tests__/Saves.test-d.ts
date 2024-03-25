@@ -1,5 +1,5 @@
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
-import { RawSaves } from '..';
+import type { RawSaves } from '..';
 
 const sampleSaves = {
     fortitude: 0,
