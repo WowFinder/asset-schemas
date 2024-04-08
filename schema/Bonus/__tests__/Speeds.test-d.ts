@@ -1,5 +1,6 @@
 import { expectAssignable, expectNotAssignable } from 'jest-tsd';
 import type { RawSpeeds } from '..';
+import { FlyManeuverability } from '@wowfinder/ts-enums';
 
 const minimalSpeeds = {
     base: 0,
@@ -11,7 +12,7 @@ const fullSpeeds = {
     climb: 0,
     burrow: 0,
     fly: 0,
-    maneuverability: 'clumsy',
+    maneuverability: FlyManeuverability.clumsy,
 };
 
 describe('Speeds', () => {

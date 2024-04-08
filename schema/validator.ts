@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/naming-convention */
+// Pending full rewrite / refactor (https://github.com/WowFinder/asset-schemas/issues/19)
 import { readFileSync, readdirSync } from 'fs';
 import JSON5 from 'json5';
 import Ajv from 'ajv';
