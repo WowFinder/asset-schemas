@@ -1,5 +1,5 @@
 import { Alignment, Languages, Skill } from '@wowfinder/ts-enums';
-import type { RawSaves, RawSpeeds, RawStats } from 'Bonus';
+import type { RawSaves, RawSpeeds, RawStats } from './Bonus';
 
 interface RawRaceAsset {
     key: string;

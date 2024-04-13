@@ -1,16 +1,12 @@
 {
     "name": "@wowfinder/asset-schemas",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "description": "Asset schemas and validation for the WowFinder project",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": "https://github.com/WowFinder/asset-schemas.git",
     "author": "Edurne Pascual <herenvardo@gmail.com>",
     "license": "GPL-3.0-or-later",
-    "files": [
-        "dist",
-        "GPL3.txt"
-    ],
     "scripts": {
         "lint": "eslint . --ext js,ts",
         "lint:fix": "eslint . --ext js,ts --fix",
@@ -25,9 +21,11 @@
         "checks:full": "npm-run-all -sc lint:fix format build test:coverage",
         "checks:pedantic": "npm-run-all -sc lint:fix format build test:coverage skott:circular",
         "build:pre": "rimraf dist",
-        "build:ts": "tsc",
+        "build:tsc": "tsc",
         "build:schema": "bash build-schemas.sh",
-        "build": "npm-run-all -s build:pre build:ts build:schema",
+        "build:setup": "node dist/.setup.js",
+        "build:pack": "cd dist && yarn pack && mv package.tgz ../package.tgz",
+        "build": "npm-run-all -s build:pre build:tsc build:schema build:setup build:pack",
         "prepublishOnly": "yarn checks:pedantic && yarn version apply && yarn build"
     },
     "dependencies": {

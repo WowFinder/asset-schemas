@@ -9,11 +9,10 @@
         "esModuleInterop": true,
         "noImplicitAny": true,
         "sourceMap": true,
-        "baseUrl": "./schema",
         "outDir": "dist",
         "strict": true,
         "moduleResolution": "node",
         "resolveJsonModule": true
     },
-    "include": ["schema/**/*"]
+    "include": ["schema/**/*", "schema/.setup.ts"]
 }
