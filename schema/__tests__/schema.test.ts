@@ -58,3 +58,10 @@ describe('should pass static type tests', () => {
     const baseDir = resolve(__dirname, '..');
     testAssetDir(baseDir, '.', '.', testableTypes);
 });
+describe('.setup.ts', () => {
+    it('should run the module', async () => {
+        const setup = await require('../.setup');
+        expect(setup).toBeDefined();
+        expect(setup.cleanup).not.toThrow();
+    });
+});

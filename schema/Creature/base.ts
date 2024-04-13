@@ -1,4 +1,4 @@
-import type { RawSkills, RawStats } from 'Bonus';
+import type { RawSkills, RawStats } from '../Bonus';
 import type { RawPersonalDetails } from './Personal';
 
 type RawClassEntry = {
