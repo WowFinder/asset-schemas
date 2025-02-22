@@ -6,4 +6,4 @@ type RawSpellPower = {
     [key in SpellPowerKey]?: number;
 };
 
-export type { RawSpellPower };
+export type { SpellPowerKey, RawSpellPower };
