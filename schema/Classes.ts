@@ -29,4 +29,9 @@ interface RawClassAsset {
     features: RawClassFeatureEntry[];
 }
 
-export type { RawClassAsset, RawClassFeatureEntry };
+export type {
+    RawBasicClassFeatureEntry,
+    RawClassAuraEntry,
+    RawClassAsset,
+    RawClassFeatureEntry,
+};

@@ -53,4 +53,14 @@ interface RawCreatureAsset {
     inventory?: RawInventory;
 }
 
-export type { RawCreatureAsset };
+export type {
+    RawClassEntry,
+    RawClassEntries,
+    RawTemplateEntry,
+    RawTemplateEntries,
+    RawFeatSelection,
+    RawFeatSelections,
+    RawItems,
+    RawInventory,
+    RawCreatureAsset,
+};
