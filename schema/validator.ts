@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention */
 // Pending full rewrite / refactor (https://github.com/WowFinder/asset-schemas/issues/19)
 import { readFileSync, readdirSync } from 'fs';
 import JSON5 from 'json5';
@@ -16,8 +15,8 @@ const assetTypes = {
 } as const;
 type AssetType = keyof typeof assetTypes;
 
-function isJson5Parseable(path: string): boolean {
-    return path.endsWith('.json5') || path.endsWith('.json');
+function isJson5Parseable(fpath: string): boolean {
+    return fpath.endsWith('.json5') || fpath.endsWith('.json');
 }
 
 const schemas: Map<AssetType, object> = new Map();
@@ -35,7 +34,7 @@ function getSchema(schemaKey: AssetType): object {
         loadSchema(schemaKey);
     }
     const schema = schemas.get(schemaKey);
-    /* istanbul ignore next */
+    /* istanbul ignore next - cannot cover properly on Jest */
     if (!schema) {
         throw new Error(`Schema ${schemaKey} not found`);
     }
@@ -44,7 +43,7 @@ function getSchema(schemaKey: AssetType): object {
 
 function validateObject(schemaKey: AssetType, raw: object): void {
     const schema = getSchema(schemaKey);
-    /* istanbul ignore next */
+    /* istanbul ignore next - cannot cover properly on Jest */
     if (!ajv.validate(schema, raw)) {
         throw new Error(ajv.errorsText());
     }
