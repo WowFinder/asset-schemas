@@ -30,10 +30,10 @@ function main(): void {
         sourceObj.main = sourceObj.main.slice(5);
     }
     if (sourceObj.types.startsWith('dist/')) {
-        sourceObj.main = sourceObj.main.slice(5);
+        sourceObj.types = sourceObj.types.slice(5);
     }
     writeBufferSync(['package.json'], JSON.stringify(sourceObj, null, 2));
-    writeBufferSync(['version.txt'], sourceObj.version);
+    writeBufferSync(['version.txt'], `${sourceObj.version}`);
     writeBufferSync(['yarn.lock'], '');
     copyFromParentSync('LICENSE');
     copyFromParentSync('README.md');
