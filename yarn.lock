@@ -1298,17 +1298,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsd/typescript@npm:^5.8.3":
+"@tsd/typescript@npm:^5.8.3, @tsd/typescript@npm:~5.8.3":
   version: 5.8.3
   resolution: "@tsd/typescript@npm:5.8.3"
   checksum: 10c0/d136086026f66286fb4f5b02f88109c4bcfe965956620c8eec2ee9aebe9e2d03caba208df0c0612209954de2df4ef2f9ff1c845b8d500b7db6e819585d3ade71
-  languageName: node
-  linkType: hard
-
-"@tsd/typescript@npm:~5.4.3":
-  version: 5.4.4
-  resolution: "@tsd/typescript@npm:5.4.4"
-  checksum: 10c0/cfa939f7e229cc157edb8b9333e9e11784b3b9bc13f29981127971de676a0c4c98f5df6ac808352cc04b72be281d6e4e9f8fbed1d218119a8adf271531deedd6
   languageName: node
   linkType: hard
 
@@ -1850,10 +1843,10 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^8.29.1"
     "@typescript-eslint/parser": "npm:^8.29.1"
     "@typescript-eslint/utils": "npm:^8.29.1"
-    "@wowfinder/ts-enums": "npm:^0.0.18"
+    "@wowfinder/ts-enums": "npm:^0.0.19"
     ajv: "npm:^8.17.1"
     eslint: "npm:^9.24.0"
-    eslint-config-prettier: "npm:^10.1.1"
+    eslint-config-prettier: "npm:^10.1.2"
     eslint-config-standard: "npm:^17.1.0"
     eslint-plugin-deprecation: "npm:^3.0.0"
     eslint-plugin-import: "npm:^2.31.0"
@@ -1872,18 +1865,18 @@ __metadata:
     rimraf: "npm:^6.0.1"
     skott: "npm:^0.35.4"
     ts-jest: "npm:^29.3.1"
-    tsd: "npm:^0.31.2"
+    tsd: "npm:^0.32.0"
     typescript: "npm:^5.8.3"
     typescript-json-schema: "npm:^0.65.1"
   languageName: unknown
   linkType: soft
 
-"@wowfinder/ts-enums@npm:^0.0.18":
-  version: 0.0.18
-  resolution: "@wowfinder/ts-enums@npm:0.0.18"
+"@wowfinder/ts-enums@npm:^0.0.19":
+  version: 0.0.19
+  resolution: "@wowfinder/ts-enums@npm:0.0.19"
   dependencies:
     globals: "npm:^16.0.0"
-  checksum: 10c0/191ec49331191f043f1f4802b83c5fab3f87dc750bb9dc80494a53000ac0883bc5d4a68ed2f782cc3ea9f240d92289f55647d77587bc2e0aec03eb41275710d3
+  checksum: 10c0/2f0dfb4878fffd771cd4ee8ff7eb21cd8b8df836947e861ecb3063c1e688bcd1f236f3c8095b6465421b4447d2f3827ea2dde16d12a08eb57437cbd20a8d09dd
   languageName: node
   linkType: hard
 
@@ -3413,14 +3406,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^10.1.1":
-  version: 10.1.1
-  resolution: "eslint-config-prettier@npm:10.1.1"
+"eslint-config-prettier@npm:^10.1.2":
+  version: 10.1.2
+  resolution: "eslint-config-prettier@npm:10.1.2"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: 10c0/3dbfdf6495dd62e2e1644ea9e8e978100dabcd8740fd264df1222d130001a1e8de05d6ed6c67d3a60727386a07507f067d1ca79af6d546910414beab19e7966e
+  checksum: 10c0/c22c8e29193cc8fd70becf1c2dd072513f2b3004a175c2a49404c79d1745ba4dc0edc2afd00d16b0e26d24f95813a0469e7445a25104aec218f6d84cdb1697e9
   languageName: node
   linkType: hard
 
@@ -8310,11 +8303,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsd@npm:^0.31.2":
-  version: 0.31.2
-  resolution: "tsd@npm:0.31.2"
+"tsd@npm:^0.32.0":
+  version: 0.32.0
+  resolution: "tsd@npm:0.32.0"
   dependencies:
-    "@tsd/typescript": "npm:~5.4.3"
+    "@tsd/typescript": "npm:~5.8.3"
     eslint-formatter-pretty: "npm:^4.1.0"
     globby: "npm:^11.0.1"
     jest-diff: "npm:^29.0.3"
@@ -8323,7 +8316,7 @@ __metadata:
     read-pkg-up: "npm:^7.0.0"
   bin:
     tsd: dist/cli.js
-  checksum: 10c0/359af4639695cb7c55e011329e24929c257a969194a30ec6a71c6b443b7e1c5de386319a8e47464c8545c979e59ce7fcd6063836ab7883df13cdb0be856d6ab7
+  checksum: 10c0/371e8269052f9665b7290e2049ddcc36c67320028715632b0e3e4666e6dfa8a935c801fbdcaa94393ffb7e439c4cdcb6142859560d21d2a938f5c240e7f10833
   languageName: node
   linkType: hard
 
