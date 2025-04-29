@@ -1,7 +1,7 @@
 {
     "name": "@wowfinder/asset-schemas",
     "type": "commonjs",
-    "version": "0.0.19",
+    "version": "0.0.20",
     "description": "Asset schemas and validation for the WowFinder project",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -34,7 +34,7 @@
         "prepublishOnly": "yarn checks:pedantic && yarn version apply && yarn build"
     },
     "dependencies": {
-        "@wowfinder/ts-enums": "^0.0.22",
+        "@wowfinder/ts-enums": "^0.0.23",
         "ajv": "^8.17.1",
         "globals": "^16.0.0"
     },
@@ -46,10 +46,10 @@
         "@tsd/typescript": "^5.8.3",
         "@types/ajv": "^1.0.4",
         "@types/jest": "^29.5.14",
-        "@types/node": "^22.15.2",
-        "@typescript-eslint/eslint-plugin": "^8.31.0",
-        "@typescript-eslint/parser": "^8.31.0",
-        "@typescript-eslint/utils": "^8.31.0",
+        "@types/node": "^22.15.3",
+        "@typescript-eslint/eslint-plugin": "^8.31.1",
+        "@typescript-eslint/parser": "^8.31.1",
+        "@typescript-eslint/utils": "^8.31.1",
         "eslint": "^9.25.1",
         "eslint-config-prettier": "^10.1.2",
         "eslint-config-standard": "^17.1.0",
