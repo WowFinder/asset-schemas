@@ -539,15 +539,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/compat@npm:^1.2.8":
-  version: 1.2.8
-  resolution: "@eslint/compat@npm:1.2.8"
+"@eslint/compat@npm:^1.2.9":
+  version: 1.2.9
+  resolution: "@eslint/compat@npm:1.2.9"
   peerDependencies:
     eslint: ^9.10.0
   peerDependenciesMeta:
     eslint:
       optional: true
-  checksum: 10c0/1e004c6917220ff1731fdc562ada9ddcbcecc6f3ba2e4b0433fb6d8eddf2a443e009f1f9796b78128b78a0a588c723b78021319055ac6e5dda55c0ace346496b
+  checksum: 10c0/e912058f1e3847a1eec654c0c040467b676bd48171e915c730c7215f57cf5f4db8508c4a431ccb470f4a000d94559b41c4fe8de3d71f23eb8ae7acf4959e1c06
   languageName: node
   linkType: hard
 
@@ -1832,7 +1832,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@wowfinder/asset-schemas@workspace:."
   dependencies:
-    "@eslint/compat": "npm:^1.2.8"
+    "@eslint/compat": "npm:^1.2.9"
     "@faker-js/faker": "npm:^9.7.0"
     "@stylistic/eslint-plugin-js": "npm:^4.2.0"
     "@tsconfig/node20": "npm:^20.1.5"
@@ -1843,7 +1843,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^8.31.1"
     "@typescript-eslint/parser": "npm:^8.31.1"
     "@typescript-eslint/utils": "npm:^8.31.1"
-    "@wowfinder/ts-enums": "npm:^0.0.23"
+    "@wowfinder/ts-enums": "npm:^0.0.24"
     ajv: "npm:^8.17.1"
     eslint: "npm:^9.25.1"
     eslint-config-prettier: "npm:^10.1.2"
@@ -1871,12 +1871,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@wowfinder/ts-enums@npm:^0.0.23":
-  version: 0.0.23
-  resolution: "@wowfinder/ts-enums@npm:0.0.23"
+"@wowfinder/ts-enums@npm:^0.0.24":
+  version: 0.0.24
+  resolution: "@wowfinder/ts-enums@npm:0.0.24"
   dependencies:
     globals: "npm:^16.0.0"
-  checksum: 10c0/f4bd24dde7b0f19bd3df70ee6032e9166b91acac4ff86a646756f354d88d2916f0b14c203c70e1f764fe4766d9782b4d6eb39601fd6cbca51440ffa586950db4
+  checksum: 10c0/12621d967f4aa715aaa3e088f28a7e7aa34c380ee400f109c7f6203689645b21673a578b9e66d53828d36494d28bad09fe2faed657c920fc5be2733ec8ed5ae6
   languageName: node
   linkType: hard
 
