@@ -1,5 +1,5 @@
-import type { RawSkills, RawStats } from '../Bonus';
-import type { RawPersonalDetails } from './Personal';
+import { type RawSkills, type RawStats } from '../Bonus';
+import { type RawPersonalDetails } from './Personal';
 
 type RawClassEntry = {
     class: string; // Must match a class key
@@ -32,9 +32,11 @@ type RawInventory = {
     gear?: RawItems;
     /** Default: [] (empty array) */
     carried?: RawItems;
+    /** Default: [] (empty array) */
+    owned?: RawItems;
 };
 
-interface RawCreatureAsset {
+type RawCreatureAsset = {
     key: string;
     baseStats: RawStats;
     race: string; // Must match a race key
@@ -51,16 +53,16 @@ interface RawCreatureAsset {
     feats?: RawFeatSelections;
     /** Default: {} (empty object) */
     inventory?: RawInventory;
-}
+};
 
-export type {
-    RawClassEntry,
-    RawClassEntries,
-    RawTemplateEntry,
-    RawTemplateEntries,
-    RawFeatSelection,
-    RawFeatSelections,
-    RawItems,
-    RawInventory,
-    RawCreatureAsset,
+export {
+    type RawClassEntry,
+    type RawClassEntries,
+    type RawTemplateEntry,
+    type RawTemplateEntries,
+    type RawFeatSelection,
+    type RawFeatSelections,
+    type RawItems,
+    type RawInventory,
+    type RawCreatureAsset,
 };
