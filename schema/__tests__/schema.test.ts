@@ -18,6 +18,7 @@ const testableTypes: Assets = [
             'Speeds',
             'SpellPower',
             'Stats',
+            'Vitals',
         ],
     },
 ];
@@ -63,5 +64,25 @@ describe('.setup.ts', () => {
         const setup = await require('../.setup');
         expect(setup).toBeDefined();
         expect(setup.cleanup).not.toThrow();
+    });
+});
+describe('indexes', () => {
+    describe('Bonus/index.ts', () => {
+        it('should have valid exports', async () => {
+            const bonusIndex = await import('../Bonus/index');
+            expect(bonusIndex).toBeDefined();
+        });
+    });
+    describe('Creature/index.ts', () => {
+        it('should have valid exports', async () => {
+            const creatureIndex = await import('../Creature/index');
+            expect(creatureIndex).toBeDefined();
+        });
+    });
+    describe('index.ts', () => {
+        it('should have valid exports', async () => {
+            const index = await import('../index');
+            expect(index).toBeDefined();
+        });
     });
 });
