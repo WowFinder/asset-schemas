@@ -1,10 +1,15 @@
-import { Alignment, Languages, Skill } from '@wowfinder/ts-enums';
-import type {
-    RawSaves,
-    RawSpeeds,
-    RawStats,
-    RawResistances,
-    RawVitals,
+import {
+    type Alignment,
+    type Languages,
+    type Skill,
+    type InnateTrait,
+} from '@wowfinder/ts-enums';
+import {
+    type RawSaves,
+    type RawSpeeds,
+    type RawStats,
+    type RawResistances,
+    type RawVitals,
 } from './Bonus';
 
 interface RawRaceAsset {
@@ -22,6 +27,7 @@ interface RawRaceAsset {
     saves?: RawSaves;
     resistances?: Partial<RawResistances>;
     vitals?: Partial<RawVitals>;
+    traits?: InnateTrait[];
 }
 
 export type { RawRaceAsset };
