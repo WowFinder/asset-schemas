@@ -18,6 +18,7 @@ const testableTypes: Assets = [
             'Speeds',
             'SpellPower',
             'Stats',
+            'Vitals',
         ],
     },
 ];
