@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           registry-url: 'https://registry.npmjs.org/'
       
       - name: Setup token authentication for npmjs
@@ -24,16 +24,10 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
           yarn config set npmAuthToken "${{ secrets.NPM_TOKEN }}"
 
-      - name: Install dependencies
-        run: yarn
-      - name: Lint validation
-        run: yarn lint
-      - name: Check and apply pending verions
-        run: yarn version apply
       - name: Extract tag name
         run: echo "TAG_VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
-      - name: Module compilation and build
-        run: yarn build
+      - name: Check and apply pending verions
+        run: yarn version apply
       - name: Ensure version match
         run: |
           if [ "$(jq -r .version package.json)" != "${TAG_VERSION}" ]; then
@@ -41,7 +35,13 @@ jobs:
             exit 1
           fi
 
-      # Publish your module to npmjs.org
+      - name: Install dependencies
+        run: yarn
+      - name: Lint validation
+        run: yarn lint
+      - name: Module compilation and build
+        run: yarn build
+
       - name: Publish to npmjs
         run: |
           cd dist
