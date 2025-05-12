@@ -20,8 +20,8 @@ interface RawRaceAsset {
     commonAlignments: Alignment[];
     speeds: RawSpeeds;
     saves?: RawSaves;
-    resistances?: RawResistances;
-    vitals?: RawVitals;
+    resistances?: Partial<RawResistances>;
+    vitals?: Partial<RawVitals>;
 }
 
 export type { RawRaceAsset };
