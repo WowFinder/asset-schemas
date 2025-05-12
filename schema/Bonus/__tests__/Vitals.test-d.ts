@@ -18,9 +18,8 @@ describe('Vitals', () => {
     it('should accept a full set of vitals', () => {
         expectAssignable<Required<RawVitals>>(fullVitals);
     });
-    it('should accept a partial set of vitals', () => {
-        expectAssignable<RawVitals>(fullVitals);
-        expectNotAssignable<Required<RawVitals>>(partialVitals);
+    it('should *not* accept a partial set of vitals', () => {
+        expectNotAssignable<RawVitals>(partialVitals);
     });
     it('should be usable with the Partial utility type', () => {
         expectAssignable<Partial<RawVitals>>(partialVitals);
