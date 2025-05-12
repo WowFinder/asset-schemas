@@ -26,7 +26,7 @@ jobs:
 
       - name: Extract tag name
         run: echo "TAG_VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
-      - name: Check and apply pending verions
+      - name: Check and apply pending versions
         run: yarn version apply
       - name: Ensure version match
         run: |
