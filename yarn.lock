@@ -1872,7 +1872,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^8.32.0"
     "@typescript-eslint/parser": "npm:^8.32.0"
     "@typescript-eslint/utils": "npm:^8.32.0"
-    "@wowfinder/ts-enums": "npm:^0.0.28"
+    "@wowfinder/ts-enums": "npm:^0.0.31"
     ajv: "npm:^8.17.1"
     eslint: "npm:^9.26.0"
     eslint-config-prettier: "npm:^10.1.5"
@@ -1900,12 +1900,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@wowfinder/ts-enums@npm:^0.0.28":
-  version: 0.0.28
-  resolution: "@wowfinder/ts-enums@npm:0.0.28"
+"@wowfinder/ts-enums@npm:^0.0.31":
+  version: 0.0.31
+  resolution: "@wowfinder/ts-enums@npm:0.0.31"
   dependencies:
     globals: "npm:^16.1.0"
-  checksum: 10c0/15f7cf599f205560271d54840138e28d6b42f5f7fac9480276a4fc878d0eebd528efde61ce59234045e910bfb008e9e54fdbafa7e8067dcbb9c35ca4666227e2
+  checksum: 10c0/05f664143bdeb1db1160da10c6eb7e792ead3f7e1aeea97088efa0865dca8504529a4da63fc3762374f3124cb942cb30d6dff9a7760371fd88940cd268b1833a
   languageName: node
   linkType: hard
 
