@@ -43,6 +43,8 @@ type RawCreatureAsset = {
     /** Default: empty string */
     notes?: string;
     personal: RawPersonalDetails;
+    /** Default: 0 */
+    xp?: number;
     /** Default: [] (empty array) */
     classes?: RawClassEntries;
     /** Default: [] (empty array) */
